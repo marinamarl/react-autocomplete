@@ -68,7 +68,7 @@ class Search extends Component {
           {results.map((result) => <li onClick={() => this.resultSelected(result.name)}> {result.name} </li>)}
           </ul>
           </form>
-        <div className='button-wrap'>
+            <div className='button-wrap'>
           <button className = {results.length > 0 ? 'active-button':'non-active-button'} onClick={results.length > 0 ? this.googleSearch : null} type='submit'>Click to search</button>
         </div>
       </div>
