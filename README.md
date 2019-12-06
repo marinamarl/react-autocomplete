@@ -1,3 +1,9 @@
+Note: this project is using developer mode react.
+- git clone https://github.com/marinamarl/react-autocomplete.git
+- cd react-autocomplete
+- npm install
+- npm run
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
