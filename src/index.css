@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +10,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  display: flex;
+  margin: 0 20px;
+ }
+
+.advertisement {
+  width: 15vw;
+  height: 75vh;
+  border: 1px solid;
+  position: relative;
+}
+.advertisement p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.second-col-wrap {
+  display: flex;
+  width: 80%;
+  margin-left: 20px;
+ }
+
+img {width:12vw;}
+
+.body-wrap {
+  width: 80vw;
+  margin-left: 2vw;
+}
+
+@media screen and (max-width:768px) {
+  body { margin: 10vh 0; }
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .advertisement {
+    margin: 0 5vh;
+    height: 20vh;
+    width: 90%;
+    margin-top: 20px;
+    }
+
+ }
+
+@media screen and (max-width:320px) {
+  .App { flex-direction: column;}
+
+  .advertisement {
+    display: none;
+  }
+  .xe-logo { margin:auto; }
+
+  .body-wrap {
+    width: 85%;
+    margin: auto;
+  }
+
 }
